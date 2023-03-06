@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-30</title>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1>Change Color</h1>
+    <h2>Change Color</h2>
+
+    <p>This is a paragraph.</p>
+    <p>This is Second paragraph.</p>
+
+    <div>This is div</div><br>
+
+    <button>Add classes to elements</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+        });
+    </script>
+</body>
+
+</html>

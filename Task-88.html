@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-88</title>
+    <style>
+        .container {
+            padding: 10px;
+            background: #f0e68C;
+            border: 1px solid #bead18;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Task-88</h1>
+        <p class="hint"><strong>Note:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, consequatur?</p>
+        <button type="button">Remove Paragraph's Parent</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Removes the paragraph's parent element on button click
+            $("button").click(function () {
+                $("p").unwrap();
+            });
+        });
+    </script>
+</body>
+
+</html>

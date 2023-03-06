@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Task-11</title>
+    <style>
+        p span {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <p>The best way we learn anything is by practice and exercise questions.
+        Here you have the opportunity to practice the Java programming
+        language concepts by solving the exercises starting from basic to
+        more complex exercises.</p>
+
+
+    <script>
+        $('p').each(function () {
+
+            var text_words = $(this).text().split(' ');
+
+            $(this).empty().html(function () {
+
+                for (i = 0; i < text_words.length; i++) {
+                    if (i === 0) {
+                        $(this).append('<span>' + text_words[i] + '</span>');
+                    } else {
+                        $(this).append(' <span>' + text_words[i] + '</span>');
+                    }
+                }
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>

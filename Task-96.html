@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-96</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+            border: 1px solid #cdcdcd;
+            display: inline-block;
+        }        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+	<p><strong>Note:</strong> Click inside the empty box to fill the background color.</p>
+    
+    <script>
+    $(document).ready(function(){
+        $(".box").click(function(){
+            $(this).css("background-color", "red");
+        });    
+    });
+    </script>
+</body>
+</html>

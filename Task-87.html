@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-87</title>
+    <style>
+        .container {
+            padding: 10px;
+            background: #f0e68C;
+            border: 1px solid #bead18;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Task-87</h1>
+        <p class="hint"><strong>Note:</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, numquam?</p>
+        <button type="button">Remove Paragraph</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Removes paragraphs with class "hint" from DOM on button click
+            $("button").click(function () {
+                $("p.hint").remove();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

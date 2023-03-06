@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-86</title>
+    <style>
+        .container {
+            padding: 10px;
+            background: #f0e68C;
+            border: 1px solid #bead18;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Hello World!</h1>
+        <p class="hint"><strong>Note:</strong> If you click the following button it will remove all the contents of the
+            container div including the button.</p>
+        <button type="button">Empty Container</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Empty container div on button click
+            $("button").click(function () {
+                $(".container").empty();
+            });
+        });
+    </script>
+</body>
+
+</html>

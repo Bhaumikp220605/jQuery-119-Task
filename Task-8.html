@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Task-8</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #nonSelected {
+            width: 250px;
+            height: 280px;
+            background-color: lightblue;
+            border-width: 2px;
+            border-style: dotted;
+            border-color: black;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        #selected {
+            width: 250px;
+            height: 280px;
+            background-color: lightgreen;
+            font-style: italic;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: green">Move One Div Element Inside Another</h2>
+
+    <div class="flex">
+        <div id="nonSelected">
+            <div id="div1" onclick="move(this)" style="background-color: green">
+                ONE
+            </div>
+            <div id="div2" onclick="move(this)" style="background-color: blue">
+                TWO
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: red">
+                THREE
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(246, 114, 114)">
+                FOUR
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(0, 157, 255)">
+                FIVE
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(30, 255, 0)">
+                SIX
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(255, 0, 230)">
+                SEVEN
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(254, 87, 196)">
+                EIGHT
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(132, 30, 30)">
+                NINE
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(0, 106, 255)">
+                TEN
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(0, 255, 30)">
+                ELEVEN
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(111, 138, 0)">
+                TWELVE
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(0, 71, 133)">
+                THIRTEEN
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(196, 93, 255)">
+                FOURTEEN
+            </div>
+            <div id="div3" onclick="move(this)" style="background-color: rgb(113, 16, 16)">
+                FIFTEEN
+            </div>
+
+        </div>
+        <div id="selected"></div>
+    </div>
+    <script>
+        function move(elem) {
+            if ($(elem).parent().attr("id") == "nonSelected") {
+                $(elem).detach().appendTo("#selected");
+            } else {
+                $(elem).detach().appendTo("#nonSelected");
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-git.js">
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

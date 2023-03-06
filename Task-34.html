@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-34</title>
+</head>
+
+<body>
+
+    <h1>Task-34</h1>
+
+    <h3>Double Tap To Change CSS</h3>
+
+    <p>Double Tap On Element</p>
+
+
+    <script>
+        $(document).ready(function () {
+            $("body").css("text-align", "center");
+            $("h1").css("color", "red");
+            $("p").dblclick(function () {
+                $(this).css("font-size", "30px");
+                $(this).css("color", "blue");
+            });
+        });
+    </script>
+</body>
+
+</html>

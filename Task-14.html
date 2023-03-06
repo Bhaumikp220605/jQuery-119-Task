@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Task-14</title>
+  <style>
+    div.target {
+      border: 1px solid blue;
+      height: 100px;
+      width: 100px;
+    }
+
+    div.target.left {
+      background-color: #0edc49;
+    }
+
+    div.target.right {
+      background-color: #f093df;
+    }
+
+    div.target.middle {
+      background-color: #0070d3;
+    }
+
+    div.log {
+      text-align: left;
+      color: #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Click Left Button To Color Green <br>Click Left Button To Color blue <br>Click Left Button To Color pink</h1>
+  <div class="target"></div>
+  <div class="log"></div>
+
+  <script>
+    var $log = $("div.log");
+    $("div.target").on("mousedown", function () {
+      $log.text("Button: " + event.which);
+      if (event.which === 1) {
+        $(this).removeClass("right middle").addClass("left");
+      } else if (event.which === 2) {
+        $(this).removeClass("left right").addClass("middle");
+      } else if (event.which === 3) {
+        $(this).removeClass("left middle").addClass("right");
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-37</title>
+
+    <style>
+        .main {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <center>
+        <div class="main">
+            <h1>task-37</h1>
+
+            <h3>Hover Out The Box To Change Color In JS</h3>
+        </div>
+    </center>
+
+    <script>
+        $(document).ready(function () {
+            $(".main").mouseleave(function () {
+                $(".main").css({
+                    background: "aqua",
+                    color: "black"
+                });
+            });
+            $(".main").mouseenter(function () {
+                $(".main").css({
+                    background: "none",
+                    color: "black"
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

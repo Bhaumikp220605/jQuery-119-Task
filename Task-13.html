@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Task-13</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            margin: 10px 0;
+            padding: 0 5px;
+            font-size: 2em;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="MyInput">jQuery Exercises</h1>
+
+    <input type="button" value="Remove border style" onClick="remove_style()" />
+
+    <script>
+        function remove_style() {
+            $("#MyInput").css("border", "0");
+        }
+    </script>
+</body>
+
+</html>

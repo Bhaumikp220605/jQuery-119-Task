@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Example of jQuery Method Chaining</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function() {
+$(".btn1").click(function() {
+$("p")
+.css("color", "green")
+.animate({ width: "100%" })
+.animate({ fontSize: "46px" });
+});
+$(".btn2").click(function() {
+$("p").removeAttr("style");
+});
+});
+</script>
+<style>
+p {
+color: maroon;
+font-weight: bolder;
+font-size: large;
+}
+div {
+width: 450px;
+height: 300px;
+padding: 20px;
+font-size: medium;
+text-align: center;
+margin: auto;
+background-color: lightblue;
+font-weight: bold;
+border: 3px solid teal;
+margin-top: 50px;
+margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<div>
+<p>silver oak univercity</p>
+<button type="button" class="btn1">Click to see the effect</button>
+<button type="button" class="btn2">Reset</button>
+</div>
+</body>
+</html>

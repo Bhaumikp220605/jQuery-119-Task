@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-46</title>
+
+    <style>
+        h1,
+        h3 {
+            text-align: center;
+        }
+
+        .GFG {
+            width: 350px;
+            height: 150px;
+            border: 1px solid black;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            text-align: justify;
+            display: flex;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: red;">
+        Task-46
+    </h1>
+
+    <h3>Scroll Event In jQuery Scroll To Change Color</h3>
+
+    <div class="GFG">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci, maiores accusantium sit aut amet eos ratione assumenda recusandae nobis unde, soluta veniam atque fuga corporis minus cupiditate ut eligendi aspernatur eveniet. Cum quibusdam odio totam vitae. Blanditiis unde, numquam dolore eius voluptate tenetur asperiores nulla aperiam illum veniam amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad pariatur dolores eos ex laboriosam illo temporibus maxime, optio officiis vitae recusandae aliquam dicta sed modi tenetur illum velit deserunt ipsum est nihil saepe fugiat quia. Minima est officiis tenetur repudiandae aliquid modi corrupti. Explicabo sit repellat perferendis qui dolore hic amet quaerat, optio provident numquam. Ab ipsa eaque, doloremque dolor quam cupiditate deleniti, officiis temporibus cum magni sapiente nobis quod ea corrupti similique. Ea a, aspernatur facilis tenetur, quis dicta quam corrupti sed ullam accusamus, porro in temporibus aliquid sequi recusandae? Animi pariatur hic nisi totam, dolore culpa doloremque? </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".GFG").scroll(function () {
+                $(".GFG").css({
+                    "fontSize": "18px",
+                    "color": "green"
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Task-7</title>
+</head>
+
+<body>
+    <h2 style="color:rgb(64, 71, 254)">Create Div Using jQuery</h2>
+    <div id="parent">
+        This is div
+    </div>
+    <div style="height:10px;"></div>
+    <!-- JavaScript function addText() is called to add to parent div-->
+    <input type="button" value="Add another div" onclick="addText()" />
+    <script>
+        function addText() {
+            $(document).ready(function () {
+
+                var object = {
+                    id: "divID",
+                    class: "divClass",
+                    css: {
+                        "color": "Red"
+                    }
+                };
+                var addition = $("<div>", object);
+                addition.html("This is another div");
+                $("#parent").append(addition);
+            });
+        }
+    </script>
+</body>
+
+</html>

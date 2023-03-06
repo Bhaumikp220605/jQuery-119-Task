@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Task-26</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1 style="color: green;">Delete All Rows</h1>
+
+        <h4>Delete all table rows except first one using jQuery</h4>
+
+        <table style="width:50%" id="rTable">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Sharma</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Arun</td>
+                <td>Singh</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>Watson</td>
+                <td>41</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <button id="btn">
+            Remove All Row Except First One
+        </button>
+    </center>
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                $("#rTable").find("tr:gt(0)").remove();
+            });
+        });
+    </script>
+</body>
+
+</html>

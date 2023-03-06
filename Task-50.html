@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>task--50</title>
+    <style>
+        p {
+            padding: 15px;
+            background: #F0E68C;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button type="button" class="toggle-btn">Toggle Paragraphs</button>
+    <p class="very-fast">This paragraph will show/hide with very fast speed.</p>
+    <p class="normal">This paragraph will show/hide with default speed.</p>
+    <p class="fast">This paragraph will show/hide with fast speed.</p>
+    <p class="slow">This paragraph will show/hide with slow speed.</p>
+    <p class="very-slow">This paragraph will show/hide with very slow speed.</p>
+
+
+    <script>
+        $(document).ready(function () {
+            // Toggles paragraphs with different speeds
+            $(".toggle-btn").click(function () {
+                $("p.normal").toggle();
+                $("p.fast").toggle("fast");
+                $("p.slow").toggle("slow");
+                $("p.very-fast").toggle(50);
+                $("p.very-slow").toggle(2000);
+            });
+        });
+    </script>
+</body>
+
+</html>

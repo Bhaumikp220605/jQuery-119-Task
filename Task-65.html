@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+</head>
+
+<body>
+	<p id="para">Chaining method</p>
+
+	<button>Click me</button>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function() {
+				
+				//assigning the color blue
+				$("#para").css("color", "blue")
+				//using slide up method
+					.slideUp(2000)
+				//using slide down method
+					.slideDown(200).
+				slideUp(200).
+				slideDown(400);
+			});
+		});
+	</script>
+</body>
+
+</html>
